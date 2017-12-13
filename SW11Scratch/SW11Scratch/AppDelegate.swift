@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  SW11Scratch
 //
-//  Created by Don Mini on 12/12/17.
-//  Copyright © 2017 Don Mini. All rights reserved.
+//  Created by Don Mag on 12/12/17.
+//  Copyright © 2017 Don Mag. All rights reserved.
 //
 
 import UIKit
