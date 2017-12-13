@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
 	@IBOutlet weak var theStackView: UIStackView!
 	
+	// number of label/field pairs for the top view
 	var numFields = 8
 	
 	override func viewDidLoad() {
@@ -22,7 +23,7 @@ class ViewController: UIViewController {
 			v.removeFromSuperview()
 		}
 
-		for i in 1...8 {
+		for i in 1...numFields {
 			
 			let lb = UILabel()
 			lb.translatesAutoresizingMaskIntoConstraints = false
