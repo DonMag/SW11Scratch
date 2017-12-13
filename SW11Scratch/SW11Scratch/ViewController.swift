@@ -10,9 +10,34 @@ import UIKit
 
 class ViewController: UIViewController {
 
+	@IBOutlet weak var theStackView: UIStackView!
+	
+	var numFields = 8
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		// Do any additional setup after loading the view, typically from a nib.
+		
+		// clear out "placeholder" labels and fields from Stack View
+		for v in theStackView.arrangedSubviews {
+			v.removeFromSuperview()
+		}
+
+		for i in 1...8 {
+			
+			let lb = UILabel()
+			lb.translatesAutoresizingMaskIntoConstraints = false
+			lb.text = "Label \(i)"
+			
+			let tf = UITextField()
+			tf.backgroundColor = .white
+			tf.borderStyle = .roundedRect
+			tf.translatesAutoresizingMaskIntoConstraints = false
+			
+			theStackView.addArrangedSubview(lb)
+			theStackView.addArrangedSubview(tf)
+			
+		}
+		
 	}
 
 	override func didReceiveMemoryWarning() {
